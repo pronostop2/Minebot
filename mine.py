@@ -80,7 +80,7 @@ async def main():
 
 except Exception as e:
             print(f"Erreur dans la boucle principale : {e}")
-            await asyncio.sleep(10)  # attendre avant de relancer
+await asyncio.sleep(10)  # attendre avant de relancer
 
         
         # asyncio.create_task(send_signals())
