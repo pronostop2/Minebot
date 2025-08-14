@@ -100,7 +100,7 @@ async def main():
 # Lancer le bot en arrière-plan
 @app.on_event("startup")
 async def startup_event():
-    asyncio.create_task(main_bot())
+    asyncio.create_task(main())
 
 if __name__ == "__main__":
     try:
