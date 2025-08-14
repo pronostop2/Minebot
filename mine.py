@@ -77,7 +77,7 @@ async def main():
             send_signals(),
             forward_scheduled_messages()
 )
-        except Exception as e:
+    except Exception as e:
             print(f"Erreur dans la boucle principale : {e}")
             await asyncio.sleep(10)  # attendre avant de relancer
 
