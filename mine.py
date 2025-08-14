@@ -17,7 +17,15 @@ MESSAGES_TO_FORWARD = [
 bot = Bot(token=TOKEN, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
 dp = Dispatcher()
 
+from fastapi import FastAPI
+import asyncio
 
+app = FastAPI()
+
+@app.get("/")
+async def home():
+    return {"status": "Bot running"}
+    
 def generate_grid():
     grid_size = 5
     total_stars = 4 if random.randint(1, 5) != 5 else 5
@@ -88,6 +96,11 @@ async def main():
         # await dp.start_polling(bot)
     # except Exception as e:
     #     print(f"Erreur dans la boucle principale : {e}")
+
+# Lancer le bot en arrière-plan
+@app.on_event("startup")
+async def startup_event():
+    asyncio.create_task(main_bot())
 
 if __name__ == "__main__":
     try:
