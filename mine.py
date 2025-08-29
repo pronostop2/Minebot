@@ -11,7 +11,7 @@ MESSAGES_TO_FORWARD = [
     {"from_chat_id": "@mine1wgroup", "message_id": 285},
     {"from_chat_id": "@mine1wgroup", "message_id": 599},
     {"from_chat_id": "@mine1wgroup", "message_id": 1677},
-    {"from_chat_id": "@mine1wgroup", "message_id": 1805},
+    {"from_chat_id": "@mine1wgroup", "message_id": 867},
 ]
 
 bot = Bot(token=TOKEN, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
