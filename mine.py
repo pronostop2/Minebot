@@ -4,7 +4,7 @@ from aiogram.client.bot import DefaultBotProperties
 from aiogram import Bot, Dispatcher, types
 from aiogram.enums import ParseMode
 
-TOKEN = "7681705342:AAECmNfwrXMkrdYJkNYjLX-MfCsqILF32Hs"
+TOKEN = "7500348646:AAG0JIi-PXX9Q7yEzP_-iSQ6QziVFLWy0-o"
 CHANNEL_ID = "@mine1wgroup"
 
 MESSAGES_TO_FORWARD = [
