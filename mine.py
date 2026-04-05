@@ -50,7 +50,7 @@ async def send_signals():
                 "<i>Valide pendant 3min ......</i>\n"
                 "Piège : 3 💣\n\n"
                 f"{grid}\n\n"
-                "👉 <a href=\"https://1wyvrz.life/v3/2158/1win-mines?p=qn1x\">Joue ici !</a>\n"
+                "👉 <a href=\"https://one-vv624.com/?open=register&p=8ocv">Joue ici !</a>\n"
                 "❓ <a href=\"https://t.me/c/2183428707/285\">Comment jouer ?</a>"
             )
             signal_message = await bot.send_message(CHANNEL_ID, message)
