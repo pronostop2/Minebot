@@ -53,7 +53,7 @@ async def send_signals():
                 '👉 <a href=\"https://one-vv624.com/?open=register&p=8ocv/">Joue ici !</a>\n'
                 "❓ <a href=\"https://t.me/c/2183428707/285\">Comment jouer ?</a>"
             )
-            signal_message = await bot.send_message(CHANNEL_ID, message)
+            signal_message = await bot.send_message(CHANNEL_ID, message,disable_web_page_preview=True)
             await asyncio.sleep(5)
             await bot.send_message(CHANNEL_ID, "👉 <i>Jouer avant 3min...</i> ✅")
             await asyncio.sleep(160)
