@@ -27,7 +27,7 @@ STICKERS = [
 ]
 
 WIN_MESSAGES = [
-    "✅✅✅ <i>BOOOOOOM</i> ✅✅✅💰",
+    "✅✅✅ <i>GREENNNNNN!!!</i> ✅✅✅💰",
     "✅✅✅ GREENNNNNN!!! ✅✅✅",
 ]
 
@@ -65,12 +65,12 @@ async def send_signals():
 
             grid = generate_grid()
             message = (
-                "✅ CONFIRMED ENTRY!\n"
+                "✅ CONFIRMED ENTRY! \n"
                 "<i>Valid for 3 minutes ......</i>\n"
                 "Bombs: 3 💣\n\n"
                 f"{grid}\n\n"
                 '👉 <a href="https://one-vv1089.com/?open=register&p=8ocv">Play here !</a>\n'
-                "❓ <a href=\"https://t.me/c/2183428707/285\">How to play ?</a>"
+                "❓ <a href=\"https://t.me/c/2183428707/285\">How to play ?  </a>"
             )
             signal_msg = await bot.send_message(
                 CHANNEL_ID, message, disable_web_page_preview=True
