@@ -60,24 +60,24 @@ async def send_signals():
     """Envoie des signaux en continu avec gestion d'erreur par cycle."""
     while True:
         try:
-            await bot.send_message(CHANNEL_ID, "🚨 <i>Recherche de nouveau signal...</i>")
+            await bot.send_message(CHANNEL_ID, "🚨 <i>Checking new signal.....</i>")
             await asyncio.sleep(random.randint(20, 30))
 
             grid = generate_grid()
             message = (
-                "✅ NOUVEAU SIGNAL\n"
-                "<i>Valide pendant 3min ......</i>\n"
-                "Piège : 3 💣\n\n"
+                "✅ CONFIRMED ENTRY!\n"
+                "<i>Valid for 3 minutes ......</i>\n"
+                "Bombs: 3 💣\n\n"
                 f"{grid}\n\n"
-                '👉 <a href="https://one-vv624.com/?open=register&p=8ocv">Joue ici !</a>\n'
-                "❓ <a href=\"https://t.me/c/2183428707/285\">Comment jouer ?</a>"
+                '👉 <a href="https://one-vv1089.com/?open=register&p=8ocv">Play here !</a>\n'
+                "❓ <a href=\"https://t.me/c/2183428707/285\">How to play ?</a>"
             )
             signal_msg = await bot.send_message(
                 CHANNEL_ID, message, disable_web_page_preview=True
             )
 
             await asyncio.sleep(5)
-            await bot.send_message(CHANNEL_ID, "👉 <i>Jouer avant 3min...</i> ✅")
+            await bot.send_message(CHANNEL_ID, "👉 <i>Play within 3 minutes...</i> ✅")
 
             await asyncio.sleep(160)
             await bot.send_message(
