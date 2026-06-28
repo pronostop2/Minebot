@@ -8,7 +8,7 @@ from fastapi import FastAPI
 
 # ─── CONFIG ───────────────────────────────────────────────────────────────────
 TOKEN = "7500348646:AAG0JIi-PXX9Q7yEzP_-iSQ6QziVFLWy0-o"
-CHANNEL_ID = "@mine1wgroup"
+CHANNEL_ID = "@mine1wngroup"
 RENDER_URL = "https://minebot-y8sm.onrender.com"  # ← remplace par ton URL Render
 
 MESSAGES_TO_FORWARD = [
