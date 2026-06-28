@@ -90,6 +90,8 @@ async def send_signals():
              # ------------ newmsg --------------------
 #         newmsg = "Register using the coupon CASHF and get a 500% bonus on your first deposit and activate the bot. 💎
 # (Minimum $10 required to activate)"
+
+            await asyncio.sleep(20)
             await bot.send_message(
                 CHANNEL_ID, 
                 "Register using the coupon CASHF and get a 500% bonus on your first deposit and activate the bot. 💎\n"
